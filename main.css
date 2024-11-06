@@ -1,6 +1,53 @@
-
-body{background: rgb(206, 204, 204);}
-
-div{
-    background:linear-gradient(white,rgb(96, 186, 198)); 
+body{
+    /* background:linear-gradient(white,rgb(96, 186, 198));  */
+    background:rgb(222, 236, 234);  
+   
 }
+
+
+
+ul{  
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:15px;
+    text-align:unset;
+    border-radius: 8px;
+
+}  
+
+li{
+    display:flex;
+    align-items: center;
+    background-color: rgb(99, 137, 137);
+    border-radius: 8px;
+    border-style: solid;
+    padding:16px;
+}
+img{
+    height:342px;
+    width:223px;
+}
+
+button{
+    padding:20px,5px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 5px, 20px;
+}
+
+/* // <p>
+// <span class = "author"> Author:${book.author}</span>
+// <br>
+// <span class = "country"> Author:${book.country}</span>
+// <br>
+// <span class = "pages"> Pages:${book.pages}</span>
+// <br>
+// <span class = "links"> <a href="${book.link}" target="_blank">Book-link</a>  
+// </span>
+// <br>
+// <span class = "year"> Year: ${book.year} </span>
+// </p> */

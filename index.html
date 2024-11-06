@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <script src="/index.js" defer></script>
     <title>library</title>
 </head>
 <body>
     <div id="container">
      <!-- image background  -->
         <header> 
-            <nav>
-                <a href="./books.html">Add books</a>
-            </nav>
-
             <h1>BOOK COLLECTION</h1>
         </header>
         <p>This are the <b>Top</b> recommended books to read. 
         </p>
+        <h1> Any Recommendations </h1>
+    </section>
+        <!-- holds the added books  -->
+        <form id="inputform" required>
+            <label for="title" name="title">Title</label>
+            <input type="text" name="title" id="title" required><br>
+            <label for="author" name="author">Author</label>
+            <input type="text" id="author" autocomplete="on"><br>
+            <label for="country" name="country">Country</label>
+            <input type="text" id="country" autocomplete="on"><br>
+            <label for="imageLink" name="imageLink">Image-Link</label>
+            <textarea name="imageLink" id="imageLink" placeholder="paste an imagelink here" rows="5" autocomplete="on"></textarea><br>
+            <label for="language" name="language">Language</label>
+            <input type="text" id="language" autocomplete="on"><br>
+            <label for="link" name="link">Link</label>
+            <textarea name="link" id="link" placeholder="paste the wikipedia link here" rows="5" autocomplete="on"></textarea><br>
+            <label for="page" name="page">Pages</label>
+            <input type="number" id="page"><br>
+            <label for="year" name="year">Year</label>
+            <input type="number" id="year"><br>
+            <button type="submit">Add Book</button>
+        </section>
+
         <main id="mainbooks">  
             <!-- Card collection of the books  -->
-            <ul id="list" class="firstcard">
+             <ul id="list" class="firstcard"></ul>
         </main>
     </div>
+    <footer id="footercopyright">
+    </footer>
     
 </body>
 </html>
